@@ -16,54 +16,67 @@ public class IfElse_Exercicio04 {
 		System.out.print("\tVertebrado ou Invertebrado: ");
 		vertInvert = input.next();
 		
-		if(vertInvert.equalsIgnoreCase("vertebrado")) { //Verifica se o animal é vertebrado ou invertebrado
-			System.out.print("\tAve ou Mamífero: "); //Caso positivo, pergunta entre ave e mamífero
+		// Verifica se o animal é vertebrado ou invertebrado
+		if(vertInvert.equalsIgnoreCase("vertebrado")) {
+			
+			//Caso positivo, pergunta entre ave e mamífero
+			System.out.print("\tAve ou Mamífero: "); 
 			classe = input.next();
 			
-			if(classe.equalsIgnoreCase("ave")) { //Se for ave, pergunta entre carnívoro e onívoro
+			//Se for ave, pergunta entre carnívoro e onívoro
+			if(classe.equalsIgnoreCase("ave")) { 
 				System.out.print("\tCarnívoro ou Onívoro: ");
 				dieta = input.next();
 				
-				if(dieta.equalsIgnoreCase("carnívoro")) {//Se for carnívoro, retorna águia, se não, retorna pomba
+				//Se for carnívoro, retorna águia, se não, retorna pomba
+				if(dieta.equalsIgnoreCase("carnívoro")) {
 					System.out.print("\n\t\tÁguia");
 				}else {
 					System.out.print("\n\t\tPomba");
 				}
-			}else { //Se for mamífero, pergunta entre onívoro e herbívoro
+			
+			//Se for mamífero, pergunta entre onívoro e herbívoro
+			}else { 
 				System.out.print("\tOnívoro ou Herbívoro: ");
-				dieta = input.next();
+				dieta = input.next();				
 				
-				if(dieta.equalsIgnoreCase("onívoro")) {//Se for onívoro, retorna homem, se não, retorna vaca
+				//Se for onívoro, retorna homem, se não, retorna vaca
+				if(dieta.equalsIgnoreCase("onívoro")) {
 					System.out.print("\n\t\tHomem");
 				}else {
 					System.out.print("\n\t\tVaca");
 				}
 			}
-		}else if(vertInvert.equalsIgnoreCase("invertebrado")) { //Se for invertebrado, pergunta entre inseto ou anelídeo
+		}else { 
+			
+			//Se for invertebrado, pergunta entre inseto ou anelídeo
 			System.out.print("\tInseto ou Anelídeo: ");
 			classe = input.next();
 			
-			if(classe.equalsIgnoreCase("inseto")) { //Se for inseto, pergunta entre hematófago e herbívoro
+			//Se for inseto, pergunta entre hematófago e herbívoro
+			if(classe.equalsIgnoreCase("inseto")) {
 				System.out.print("\tHematófago ou Herbívoro: ");
 				dieta = input.next();
 				
-				if(dieta.equalsIgnoreCase("hematófago")) { //Se for hematófago, retorna pulga, se não, lagarta
+				//Se for hematófago, retorna pulga, se não, lagarta
+				if(dieta.equalsIgnoreCase("hematófago")) {
 					System.out.print("\n\t\tPulga");
 				}else {
 					System.out.print("\n\t\tLagarta");
 				}
-			}else { //Se for anelídeo, pergunta entre hematófago e onívoro
+				
+			//Se for anelídeo, pergunta entre hematófago e onívoro
+			}else {
 				System.out.print("\tHematófago ou Onívoro: ");
 				dieta = input.next();
 				
-				if(dieta.equalsIgnoreCase("hematófago")) { //Se for hematófago retorna sanguessuga, se não, minhoca
+				//Se for hematófago retorna sanguessuga, se não, minhoca
+				if(dieta.equalsIgnoreCase("hematófago")) {
 					System.out.print("\n\t\tSanguessuga");
 				}else {
 					System.out.print("\n\t\tMinhoca");
 				}
 			}
-		}else { //Se entrar uma palavra diferente de vertebrado ou invertebrado, dispara essa mensagem
-			System.out.print("\nPor favor, insira uma característica válida.");
 		}
 
 	}
