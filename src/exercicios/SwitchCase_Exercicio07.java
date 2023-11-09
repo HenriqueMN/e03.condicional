@@ -30,24 +30,24 @@ public class SwitchCase_Exercicio07 {
 		
 		//Switch...Case
 		switch(codigo) {
-		case 1:
+		case 1: //Adição
 			resultado = num1 + num2;
 			System.out.printf("\n" + num1 + " + " + num2 + " = %.2f", resultado);
 			break;
-		case 2:
+		case 2: //Subtração
 			resultado = num1 - num2;
 			System.out.printf("\n" + num1 + " - " + num2 + " = %.2f", resultado);
 			break;
-		case 3:
+		case 3: //Multiplicação
 			resultado = num1 * num2;
 			System.out.printf("\n" + num1 + " * " + num2 + " = %.2f", resultado);
 			break;
-		case 4:
+		case 4: //Divisão
 			resultado = num1 / num2;
 			System.out.printf("\n" + num1 + " / " + num2 + " = %.2f", resultado);
 			break;
 			
-			default: System.out.print("\nInsira um código válido.");
+			default: System.out.print("\nOperação inválida!.");
 		}
 		
 
