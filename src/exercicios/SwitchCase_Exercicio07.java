@@ -47,7 +47,7 @@ public class SwitchCase_Exercicio07 {
 			System.out.printf("\n" + num1 + " / " + num2 + " = %.2f", resultado);
 			break;
 			
-			default: System.out.print("\nOperação inválida!.");
+			default: System.out.print("\nOperação inválida!");
 		}
 		
 
